@@ -1,1 +1,1 @@
-# Classic_Titanic_DataSet
+# Approaching a Classification Problem
