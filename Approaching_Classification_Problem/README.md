@@ -3,7 +3,22 @@ This repository is created to give a brief introduction on how to approach a sup
 ## Goal
 The aim of this repository is not just to achieve the accuracy using any one model. It's more about how you start with the raw data and what tools can be used to get a final solution. I use this repository more like a **revision material** from time to time as I discussed various techniques to get inputs from the data and go over an exhautive list of machine learning algorithms along with my personal notes explaining the algorithm in laymans terms.
 ## Repository Structure
+```
+.
+├── Notebook.ipynb
+├── README.md
+├── environment.yml
+├── geckodriver.log
+├── images
+│   ├── Age_fare_count.png
+│   ├── age_corr.png
+│   ├── fare_gaus.png
+│   ├── fea_imp.png
+│   └── summary.png
+└── train.csv
 
+1 directory, 10 files
+```
 ## Usage
 If you want a quick glance, click on the `Notebook.ipynb` which has all the code and outputs with explanations. Or you want to try it on your own, you can download from the github. But I prefer to do it from the command line as I enclosed a `environment.yml` too to give you all the required packages in one shot. The usage steps are:
 1. Open your terminal
