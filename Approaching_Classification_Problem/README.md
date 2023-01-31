@@ -22,6 +22,7 @@ First things first, we will import necessary libraries and the dataset. As the g
 ### Exploratory Data Analysis (EDA)
 EDA is all about getting the feel of the data. Checking what is inside the dataset, what kind of values, understanding distributions, checking null values, realtionships between the features etc .. It is the most important step in building a model beacuse its all about the data.  
 I start by reading the data into a pandas dataframe and go through the data and datatypes. Plots are best way to digest large datasets and get some insights. For example from the graph below, we can see that many passengers are between 20-35 of age and paid below 50$ for the ticket. A few assumptions can also be drawn like most of the infants and high paid passengers survived. Go through the code to look into more details.  
+
 ![Age and Fare vs Count](images/Age_fare_count.png)
 ### Data Pre-processing
 From the conclusions derived from the EDA steps, we will process the data inorder to better suit for our models. This involves:
@@ -29,11 +30,13 @@ From the conclusions derived from the EDA steps, we will process the data inorde
   Before we do any analysis, its better to take care of outliers as they might make our assumptions biased. There are various strategies available to detect outliers. I used Turkey method.
 2. Dealing with skewness
   We prefer our data to resemble Gaussian distribution due to their friendly properties. Below is a figure where I transformed the data inorder to look like a guassian.  
+
   ![Gaussian](images/fare_gaus.png)
 3. Dealing with dimensionality
   Since the dataset is small, I didn't use any techniques to decrease the features. But I dropped few features that might not have any effect on the output.
 4. Dealing with null values
   Null values should be treated as they can cause many errors during model building. There are different methods to fill null values. Simplest one is to fill with random values using mean and standard deviation or using medians. But a better approach would be figuring out null value using its correlation with other features. Below is a figure showing correlations between `Age` and other features.  
+
   ![Box-Plot of Age](images/age_corr.png)
 ### Feature Engineering
 Feature engineering is where we try to build new features from existing features. Maybe combining or tweaking features to better suit our model. For our dataset, I have dropped `Name` but we can instead try to tweak the feature and get something useful for our model like Dr or other rare titles in the name is impacting their survivability. Also we can combine `SibSp` and `Parch` into a single feature of `family_size`. So feature engineering is all about engineering our features to better fit our model to give better predictions. But I feel `Name` might not impact survivability so much (tbh I am lazy), so I left it.  
@@ -53,7 +56,9 @@ I used following models in the code:
 10. Voting Classifier  
 
 In the notebook, I have added my **personal notes** for most of the models to understand how the algorithm works. I progressively built on different concepts and applications of **cross validation** techniques, **hyperparameter optimization**, **Ensemble** techniques. Below are the snapshots of feature importance from a tree based model and overall accuracies leaving the final ensemble respectively.  
+
 ![Feature Importance](images/fea_imp.png)
+
 ![Summary of Model](images/summary.png)
 ## License
 Licensed under MIT licence (no restrictions!)
