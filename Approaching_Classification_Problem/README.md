@@ -21,5 +21,5 @@ EDA is all about getting the feel of the data. Checking what is inside the datas
 I start by reading the data into a pandas dataframe and go through the data and datatypes. Plots are best way to digest large datasets and get some insights. For example from the graph below, we can see that many passengers are between 20-35 of age and paid below 50$ for the ticket. A few assumptions can also be drawn like most of the infants and high paid passengers survived. Go through the code to look into more details.  
 ![Age and Fare vs Count](images/Age_fare_count.png)
 
-##License
+## License
 Licensed under MIT licence (no restrictions!)
