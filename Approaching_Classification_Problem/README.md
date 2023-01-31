@@ -8,7 +8,6 @@ The aim of this repository is not just to achieve the accuracy using any one mod
 ├── Notebook.ipynb
 ├── README.md
 ├── environment.yml
-├── geckodriver.log
 ├── images
 │   ├── Age_fare_count.png
 │   ├── age_corr.png
@@ -17,7 +16,7 @@ The aim of this repository is not just to achieve the accuracy using any one mod
 │   └── summary.png
 └── train.csv
 
-1 directory, 10 files
+1 directory, 9 files
 ```
 ## Usage
 If you want a quick glance, click on the `Notebook.ipynb` which has all the code and outputs with explanations. Or you want to try it on your own, you can download from the github. But I prefer to do it from the command line as I enclosed a `environment.yml` too to give you all the required packages in one shot. The usage steps are:
