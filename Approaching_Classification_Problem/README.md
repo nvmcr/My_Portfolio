@@ -31,13 +31,13 @@ From the conclusions derived from the EDA steps, we will process the data inorde
 2. Dealing with skewness
   We prefer our data to resemble Gaussian distribution due to their friendly properties. Below is a figure where I transformed the data inorder to look like a guassian.  
 
-  ![Gaussian](images/fare_gaus.png)
+    ![Gaussian](images/fare_gaus.png)  
 3. Dealing with dimensionality
   Since the dataset is small, I didn't use any techniques to decrease the features. But I dropped few features that might not have any effect on the output.
 4. Dealing with null values
   Null values should be treated as they can cause many errors during model building. There are different methods to fill null values. Simplest one is to fill with random values using mean and standard deviation or using medians. But a better approach would be figuring out null value using its correlation with other features. Below is a figure showing correlations between `Age` and other features.  
 
-  ![Box-Plot of Age](images/age_corr.png)
+    ![Box-Plot of Age](images/age_corr.png)
 ### Feature Engineering
 Feature engineering is where we try to build new features from existing features. Maybe combining or tweaking features to better suit our model. For our dataset, I have dropped `Name` but we can instead try to tweak the feature and get something useful for our model like Dr or other rare titles in the name is impacting their survivability. Also we can combine `SibSp` and `Parch` into a single feature of `family_size`. So feature engineering is all about engineering our features to better fit our model to give better predictions. But I feel `Name` might not impact survivability so much (tbh I am lazy), so I left it.  
 
