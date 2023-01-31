@@ -52,7 +52,7 @@ I used following models in the code:
 9. Gradient Boosting
 10. Voting Classifier  
 
-In the notebook, I have added my personal notes for most of the models to understand how the algorithm works. I progressively built on different concepts and applications of **cross validation** techniques, **hyperparameter optimization**, **Ensemble** techniques. Below is a snapshot of overall accuracies leaving the final ensemble.
+In the notebook, I have added my **personal notes** for most of the models to understand how the algorithm works. I progressively built on different concepts and applications of **cross validation** techniques, **hyperparameter optimization**, **Ensemble** techniques. Below is a snapshot of overall accuracies leaving the final ensemble.
 ![Summary of Model](images/summary.png)
 ## License
 Licensed under MIT licence (no restrictions!)
